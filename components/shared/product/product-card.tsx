@@ -1,12 +1,11 @@
 import { PropsWithChildren } from "react";
-import { Product } from "../../../db/sample-data";
 import Link from "next/link";
 import Image from "next/image";
 import { Card, CardContent, CardHeader } from "../../ui/card";
 import ProductPrice from "./product-price";
 
 type Props = PropsWithChildren<{
-  product: Product;
+  product: unknown;
 }>;
 
 const ProductCard: React.FC<Props> = ({ product }) => {

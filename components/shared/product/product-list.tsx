@@ -1,9 +1,8 @@
 import { PropsWithChildren } from "react";
-import { Product } from "../../../db/sample-data";
 import ProductCard from "./product-card";
 
 type Props = PropsWithChildren<{
-  data: Product[];
+  data: unknown;
   title: string;
   limit?: number;
 }>;

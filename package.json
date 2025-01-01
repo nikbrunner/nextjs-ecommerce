@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prisma:generate": "npx prisma generate",
+    "prisma:generate": "npx prisma generate dev",
     "prisma:inspect": "npx prisma studio",
     "postinstall": "npm run prisma:generate"
   },

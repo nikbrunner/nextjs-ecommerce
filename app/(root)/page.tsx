@@ -1,10 +1,17 @@
 import ProductList from "../../components/shared/product/product-list";
 import { getLatestProducts } from "../../lib/actions/product.actions";
+import { LATEST_PRODUCTS_LIMIT } from "../../lib/constants";
 
 const Homepage = async () => {
-  const products = await getLatestProducts();
+  const latestProducts = await getLatestProducts();
 
-  return <ProductList data={products} title="Newest Arrivals" limit={4} />;
+  return (
+    <ProductList
+      data={latestProducts}
+      title="Newest Arrivals"
+      limit={LATEST_PRODUCTS_LIMIT}
+    />
+  );
 };
 
 export default Homepage;
