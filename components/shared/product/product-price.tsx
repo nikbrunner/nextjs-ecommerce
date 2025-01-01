@@ -2,13 +2,12 @@ import { PropsWithChildren } from "react";
 import { cn } from "@/lib/utils";
 
 type Props = PropsWithChildren<{
-  value: number;
+  value: string;
   className?: string;
 }>;
 
 const ProductPrice: React.FC<Props> = ({ value, className }) => {
-  const stringValue = value.toFixed(2);
-  const [intValue, floatValue] = stringValue.split(".");
+  const [intValue, floatValue] = value.split(".");
 
   return (
     <p className={cn("text-2xl", className)}>
