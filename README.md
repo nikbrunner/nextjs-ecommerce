@@ -3,8 +3,8 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 ## Links
 
 - [Course](https://www.traversymedia.com/products/next-js-ecommerce)
-- [Premium Docs](https://www.traversymedia.com/courses/downloads/2159543730/premium-docs-zip)
-- [Tutorial Original Source Code](https://github.com/bradtraversy/prostore)
+- [Course Source Code](https://github.com/bradtraversy/prostore)
+- [Course Docs](https://www.traversymedia.com/courses/downloads/2159543730/premium-docs-zip)
 - [Demo Site](https://prostore-one.vercel.app)
 
 ## Getting Started
