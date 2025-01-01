@@ -1,5 +1,6 @@
 import { PropsWithChildren } from "react";
 import { Product } from "../../../db/sample-data";
+import ProductCard from "./product-card";
 
 type Props = PropsWithChildren<{
   data: Product[];
@@ -16,7 +17,7 @@ const ProductList: React.FC<Props> = ({ data, title, limit }) => {
       {data.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {limitedData.map((product) => {
-            return <div key={product.name}>{product.name}</div>;
+            return <ProductCard key={product.slug} product={product} />;
           })}
         </div>
       ) : (
