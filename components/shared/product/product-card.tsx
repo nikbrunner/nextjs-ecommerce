@@ -3,6 +3,7 @@ import { Product } from "../../../db/sample-data";
 import Link from "next/link";
 import Image from "next/image";
 import { Card, CardContent, CardHeader } from "../../ui/card";
+import ProductPrice from "./product-price";
 
 type Props = PropsWithChildren<{
   product: Product;
@@ -29,7 +30,7 @@ const ProductCard: React.FC<Props> = ({ product }) => {
         <div className="flex-between gap-4">
           <p>{product.rating} Stars</p>
           {product.stock > 0 ? (
-            <p className="font-bold">{product.price} </p>
+            <ProductPrice value={product.price} />
           ) : (
             <p className="text-destructive">Out of stock</p>
           )}
