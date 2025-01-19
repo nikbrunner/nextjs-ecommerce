@@ -4,6 +4,7 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 - [Course](https://www.traversymedia.com/products/next-js-ecommerce)
 - [Course Source Code](https://github.com/bradtraversy/prostore)
+- [My Source Code](https://github.com/nikbrunner/nextjs-ecommerce)
 - [Course Docs](https://www.traversymedia.com/courses/downloads/2159543730/premium-docs-zip)
 - [Demo Site](https://prostore-one.vercel.app)
 
