@@ -1,8 +1,9 @@
 import { PropsWithChildren } from "react";
 import ProductCard from "./product-card";
+import { Product } from "../../../types";
 
 type Props = PropsWithChildren<{
-  data: unknown;
+  data: Product[];
   title: string;
   limit?: number;
 }>;
